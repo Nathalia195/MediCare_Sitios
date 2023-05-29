@@ -1,0 +1,159 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#form1 {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.panel {
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #337ab7;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    .btn:hover {
+        background-color: #23527c;
+    }
+
+.textbox {
+    width: 200px;
+    padding: 6px 8px;
+    font-size: 14px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.buttons {
+    margin-top: 10px;
+}
+
+    .buttons .btn {
+        margin-right: 10px;
+    }
+
+.edit-button,
+.delete-button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+    .edit-button:hover,
+    .delete-button:hover {
+        text-decoration: underline;
+    }
+
+.confirm-dialog {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+    .confirm-dialog h3 {
+        margin-top: 0;
+    }
+
+    .confirm-dialog .btn {
+        margin-top: 10px;
+    }
+
+
+.gridview {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+    .gridview th,
+    .gridview td {
+        padding: 8px;
+        text-align: left;
+        border: 1px solid #ddd;
+    }
+
+    .gridview th {
+        background-color: #007bff;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .gridview tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    .gridview tr:hover {
+        background-color: #e5e5e5;
+    }
+
+    .gridview .edit-mode {
+        background-color: #fff;
+    }
+
+        .gridview .edit-mode select,
+        .gridview .edit-mode input[type="text"] {
+            width: 100%;
+            padding: 6px;
+            border: 1px solid #ddd;
+        }
+
+        .gridview .edit-mode select {
+            width: auto;
+        }
+
+        .gridview .edit-mode .btn-update,
+        .gridview .edit-mode .btn-cancel {
+            margin-top: 5px;
+        }
+
+.form-label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
