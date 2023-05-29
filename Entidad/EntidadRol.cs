@@ -8,5 +8,7 @@ namespace Entidad
 {
     public class EntidadRol
     {
+        public string CodigoRol { get; set; }
+        public string NombreRol { get; set; }
     }
 }
