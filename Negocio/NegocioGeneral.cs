@@ -10,57 +10,65 @@ namespace Negocio
 {
     public class NegocioGeneral
     {
-        public string Encrypt(string url)
-        {
-            string EncryptionKey = "MAKV2SPBNI99212";
-            byte[] clearBytes = Encoding.Unicode.GetBytes(url);
-            using (Aes encryptor = Aes.Create())
-            {
-                Rfc2898DeriveBytes pdb = new Rfc2898DeriveBytes(EncryptionKey, new byte[] { 0x49, 0x76, 0x61, 0x6e, 0x20, 0x4d, 0x65, 0x64, 0x76, 0x65, 0x64, 0x65, 0x76 });
-                encryptor.Key = pdb.GetBytes(32);
-                encryptor.IV = pdb.GetBytes(16);
-                using (MemoryStream ms = new MemoryStream())
-                {
-                    using (CryptoStream cs = new CryptoStream(ms, encryptor.CreateEncryptor(), CryptoStreamMode.Write))
-                    {
-                        cs.Write(clearBytes, 0, clearBytes.Length);
-                        cs.Close();
-                    }
-                    url = Convert.ToBase64String(ms.ToArray());
-                }
-            }
-            return url;
-        }
+        //public string Encrypt(string url)
+        //{
+        //    //if (url == null)
+        //    //{
+        //    //    // Manejar el caso en el que el valor de url sea nulo
+        //    //    // Puedes lanzar una excepción, devolver un valor predeterminado o tomar alguna otra acción según tus necesidades.
+        //    //    throw new ArgumentNullException(nameof(url), "El parámetro url no puede ser nulo.");
+        //    //}
+        //    //else { 
+        //    string EncryptionKey = "MAKV2SPBNI99212";
+        //    byte[] clearBytes = Encoding.Unicode.GetBytes(url);
+        //    using (Aes encryptor = Aes.Create())
+        //    {
+        //        Rfc2898DeriveBytes pdb = new Rfc2898DeriveBytes(EncryptionKey, new byte[] { 0x49, 0x76, 0x61, 0x6e, 0x20, 0x4d, 0x65, 0x64, 0x76, 0x65, 0x64, 0x65, 0x76 });
+        //        encryptor.Key = pdb.GetBytes(32);
+        //        encryptor.IV = pdb.GetBytes(16);
+        //        using (MemoryStream ms = new MemoryStream())
+        //        {
+        //            using (CryptoStream cs = new CryptoStream(ms, encryptor.CreateEncryptor(), CryptoStreamMode.Write))
+        //            {
+        //                cs.Write(clearBytes, 0, clearBytes.Length);
+        //                cs.Close();
+        //            }
+        //            url = Convert.ToBase64String(ms.ToArray());
+        //        }
+        //    }
+        //    return url;
+        //       // }
+        //}
 
-        public string Decrypt(string url)
-        {
-            if (!string.IsNullOrEmpty(url))
-            {
-                string EncryptionKey = "MAKV2SPBNI99212";
-                url = url.Replace(" ", "+");
-                byte[] cipherBytes = Convert.FromBase64String(url);
-                using (Aes encryptor = Aes.Create())
-                {
-                    Rfc2898DeriveBytes pdb = new Rfc2898DeriveBytes(EncryptionKey, new byte[] { 0x49, 0x76, 0x61, 0x6e, 0x20, 0x4d, 0x65, 0x64, 0x76, 0x65, 0x64, 0x65, 0x76 });
-                    encryptor.Key = pdb.GetBytes(32);
-                    encryptor.IV = pdb.GetBytes(16);
-                    using (MemoryStream ms = new MemoryStream())
-                    {
-                        using (CryptoStream cs = new CryptoStream(ms, encryptor.CreateDecryptor(), CryptoStreamMode.Write))
-                        {
-                            cs.Write(cipherBytes, 0, cipherBytes.Length);
-                            cs.Close();
-                        }
-                        url = Encoding.Unicode.GetString(ms.ToArray());
-                    }
-                }
-                return url;
-            }
-            else
-            {
-                return "";
-            }
-        }
+        //public string Decrypt(string url)
+        //{
+        //    if (!string.IsNullOrEmpty(url))
+        //    {
+        //        string EncryptionKey = "MAKV2SPBNI99212";
+        //        url = url.Replace(" ", "+");
+        //        byte[] cipherBytes = Convert.FromBase64String(url);
+        //        using (Aes encryptor = Aes.Create())
+        //        {
+        //            Rfc2898DeriveBytes pdb = new Rfc2898DeriveBytes(EncryptionKey, new byte[] { 0x49, 0x76, 0x61, 0x6e, 0x20, 0x4d, 0x65, 0x64, 0x76, 0x65, 0x64, 0x65, 0x76 });
+        //            encryptor.Key = pdb.GetBytes(32);
+        //            encryptor.IV = pdb.GetBytes(16);
+        //            using (MemoryStream ms = new MemoryStream())
+        //            {
+        //                using (CryptoStream cs = new CryptoStream(ms, encryptor.CreateDecryptor(), CryptoStreamMode.Write))
+        //                {
+        //                    cs.Write(cipherBytes, 0, cipherBytes.Length);
+        //                    cs.Close();
+        //                }
+        //                url = Encoding.Unicode.GetString(ms.ToArray());
+        //            }
+        //        }
+        //        return url;
+        //    }
+        //    else
+        //    {
+        //        return "";
+        //    }
+        //}
 
     }
 }

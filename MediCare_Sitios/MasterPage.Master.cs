@@ -15,21 +15,20 @@ namespace MediCare_Sitios
         string url;
         protected void Page_Load(object sender, EventArgs e)
         {
-            string myVar = obj_general.Decrypt(HttpUtility.UrlDecode(Request.QueryString["MyVar"]));
-            //myVar.Split(',')[0]; NombreUsuario
-            //myVar.Split(',')[1]; NombreCompleto
-            //myVar.Split(',')[2]; Rol
-            //myVar.Split(',')[3]; Validación que viene de login
+            string username = Session["username"].ToString();
+            string fullname = Session["fullname"].ToString();
+            string rol = Session["rol"].ToString();
 
-            if (myVar.Split(',')[0] == "1") Lbl_usuario.Text = myVar.Split(',')[1]; else Lbl_usuario.Text = myVar.Split(',')[0];
+            Lbl_usuario.Text = username;
 
-            url = myVar;
 
             imgURL.ImageUrl = "Paginas/MostrarImagen.aspx?id=" + Lbl_usuario.Text;
+
+
         }
         protected void Btn_usuario(object sender, EventArgs e)
         {
-            Response.Redirect("MantUsuario.aspx?MyVar=" + HttpUtility.UrlEncode(obj_general.Encrypt(url)));
+            Response.Redirect("MantUsuario.aspx");
         }
 
         protected void Btn_oferente(object sender, EventArgs e)
@@ -39,7 +38,7 @@ namespace MediCare_Sitios
 
         protected void Btn_puesto(object sender, EventArgs e)
         {
-            Response.Redirect("Puesto.aspx?MyVar=" + HttpUtility.UrlEncode(obj_general.Encrypt("1," + Lbl_usuario.Text)));
+            Response.Redirect("Puestos.aspx");
         }
 
         protected void Btn_verificar(object sender, EventArgs e)

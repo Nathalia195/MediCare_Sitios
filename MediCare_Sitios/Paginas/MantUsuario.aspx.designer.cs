@@ -11,34 +11,25 @@ namespace MediCare_Sitios
 {
 
 
-    public partial class Formulario_web11
+    public partial class Formulario_web13
     {
 
         /// <summary>
-        /// Control btnRistoferente.
+        /// Control btnAgregarUsuario.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton btnRistoferente;
+        protected global::System.Web.UI.WebControls.Button btnAgregarUsuario;
 
         /// <summary>
-        /// Control btnModificar.
+        /// Control GvUsuario.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton btnModificar;
-
-        /// <summary>
-        /// Control gvOferentes.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvOferentes;
+        protected global::System.Web.UI.WebControls.GridView GvUsuario;
     }
 }

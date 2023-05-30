@@ -74,8 +74,11 @@
     <Content Include="css\sb-admin-2.min.css" />
     <Content Include="css\style.css" />
     <Content Include="css\stylecss.css" />
+    <Content Include="Paginas\MantUsuario.aspx" />
+    <Content Include="Paginas\AgregarUsuario.aspx" />
+    <Content Include="Paginas\RegistrarOferente.aspx" />
+    <Content Include="Paginas\MostrarImagen.aspx" />
     <Content Include="Paginas\RegistroPuesto.aspx" />
-    <Content Include="Paginas\Usuarios.aspx" />
     <Content Include="Paginas\Puestos.aspx" />
     <Content Include="Paginas\Oferentes.aspx" />
     <Content Include="Paginas\Index.aspx" />
@@ -1751,22 +1754,50 @@
     <Content Include="vendor\fontawesome-free\webfonts\fa-brands-400.svg" />
     <Content Include="vendor\fontawesome-free\webfonts\fa-regular-400.svg" />
     <Content Include="vendor\fontawesome-free\webfonts\fa-solid-900.svg" />
+    <Content Include="vendor\jquery-easing\jquery.easing.compatibility.js" />
+    <Content Include="vendor\jquery-easing\jquery.easing.js" />
+    <Content Include="vendor\jquery-easing\jquery.easing.min.js" />
+    <Content Include="vendor\jquery\jquery.js" />
+    <Content Include="vendor\jquery\jquery.min.js" />
+    <Content Include="vendor\jquery\jquery.slim.js" />
+    <Content Include="vendor\jquery\jquery.slim.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Paginas\MantUsuario.aspx.cs">
+      <DependentUpon>MantUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\MantUsuario.aspx.designer.cs">
+      <DependentUpon>MantUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\AgregarUsuario.aspx.cs">
+      <DependentUpon>AgregarUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\AgregarUsuario.aspx.designer.cs">
+      <DependentUpon>AgregarUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\RegistrarOferente.aspx.cs">
+      <DependentUpon>RegistrarOferente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\RegistrarOferente.aspx.designer.cs">
+      <DependentUpon>RegistrarOferente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\MostrarImagen.aspx.cs">
+      <DependentUpon>MostrarImagen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\MostrarImagen.aspx.designer.cs">
+      <DependentUpon>MostrarImagen.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Paginas\RegistroPuesto.aspx.cs">
       <DependentUpon>RegistroPuesto.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Paginas\RegistroPuesto.aspx.designer.cs">
       <DependentUpon>RegistroPuesto.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Paginas\Usuarios.aspx.cs">
-      <DependentUpon>Usuarios.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Paginas\Usuarios.aspx.designer.cs">
-      <DependentUpon>Usuarios.aspx</DependentUpon>
     </Compile>
     <Compile Include="Paginas\Puestos.aspx.cs">
       <DependentUpon>Puestos.aspx</DependentUpon>
@@ -1978,6 +2009,8 @@
     <Content Include="vendor\fontawesome-free\webfonts\fa-solid-900.ttf" />
     <Content Include="vendor\fontawesome-free\webfonts\fa-solid-900.woff" />
     <Content Include="vendor\fontawesome-free\webfonts\fa-solid-900.woff2" />
+    <Content Include="vendor\jquery\jquery.min.map" />
+    <Content Include="vendor\jquery\jquery.slim.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
