@@ -14,6 +14,7 @@ namespace MediCare_Sitios
         NegocioRol roles = new NegocioRol();
 
         EntidadUsuario obj = new EntidadUsuario();
+        
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["llave"] != null)
@@ -57,6 +58,7 @@ namespace MediCare_Sitios
 
 
                 string mensaje = NegocioUsuario.InsertarUsuarios(obj);
+                
                 MostrarMensaje(mensaje);
 
                 //limpiarForm();
