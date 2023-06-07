@@ -11,25 +11,34 @@ namespace MediCare_Sitios
 {
 
 
-    public partial class Formulario_web12
+    public partial class Formulario_web18
     {
 
         /// <summary>
-        /// Control btnAgregarPuesto.
+        /// Control txtPuesto.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor btnAgregarPuesto;
+        protected global::System.Web.UI.WebControls.TextBox txtPuesto;
 
         /// <summary>
-        /// Control gvPuesto.
+        /// Control txtNombrePuesto.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvPuesto;
+        protected global::System.Web.UI.WebControls.TextBox txtNombrePuesto;
+
+        /// <summary>
+        /// Control btnEditarPuesto.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnEditarPuesto;
     }
 }

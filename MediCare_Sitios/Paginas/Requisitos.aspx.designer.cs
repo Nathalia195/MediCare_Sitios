@@ -11,7 +11,7 @@ namespace MediCare_Sitios
 {
 
 
-    public partial class Formulario_web12
+    public partial class Formulario_web19
     {
 
         /// <summary>
@@ -24,12 +24,12 @@ namespace MediCare_Sitios
         protected global::System.Web.UI.HtmlControls.HtmlAnchor btnAgregarPuesto;
 
         /// <summary>
-        /// Control gvPuesto.
+        /// Control gvRequisito.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvPuesto;
+        protected global::System.Web.UI.WebControls.GridView gvRequisito;
     }
 }

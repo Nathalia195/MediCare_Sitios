@@ -41,9 +41,9 @@ namespace MediCare_Sitios
             Response.Redirect("Puestos.aspx");
         }
 
-        protected void Btn_verificar(object sender, EventArgs e)
+        protected void Btn_requisito(object sender, EventArgs e)
         {
-            //Response.Redirect("MantenimientoUsuario.aspx?MyVar=" + HttpUtility.UrlEncode(obj_general.Encrypt("1," + Lbl_usuario.Text)));            
+            Response.Redirect("Requisitos.aspx");
         }
     }
 }

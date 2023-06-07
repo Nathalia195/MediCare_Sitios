@@ -17,8 +17,6 @@
 
     <!-- Custom styles for this template-->
     <link href="~/css/sb-admin-2.min.css" rel="stylesheet">
-</head>
-<body id="page-top">
     <style>
         .footer {
             background-color: #ddeeff; /* Reemplaza "your-color" con el color deseado */
@@ -28,7 +26,8 @@
             /* Otros estilos de diseño según tus necesidades */
         }
     </style>
-
+</head>
+<body id="page-top">
     <!-- Page Wrapper -->
     <div id="wrapper">
         <!-- Sidebar -->
@@ -81,7 +80,7 @@
 
             <!-- Nav Item - Charts -->
             <li class="nav-item">
-                <a class="nav-link" runat="server" type="submit" onserverclick="Btn_verificar">
+                <a class="nav-link" runat="server" type="submit" onserverclick="Btn_requisito">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Requisitos</span>
                 </a>
@@ -146,10 +145,8 @@
             <!-- Footer -->
             <footer class="sticky-footer footer">
                 <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy;</span>
-                        <br />
-                        <span>MediCare Solutions</span>
+                    <div class="text-center">
+                        <span>MediCare Solutions &copy; <%: DateTime.Now.Year %></span>
                     </div>
                 </div>
             </footer>

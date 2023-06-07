@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EntidadEstado.cs" />
+    <Compile Include="EntidadRequisitos.cs" />
     <Compile Include="EntidadRol.cs" />
     <Compile Include="EntidadPuesto.cs" />
     <Compile Include="EntidadUsuario.cs" />
