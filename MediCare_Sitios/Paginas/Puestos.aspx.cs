@@ -122,8 +122,16 @@ namespace MediCare_Sitios
 
         protected void btnRequisitos_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Requisitos.aspx");
+            // Obtén el índice de la fila seleccionada
+            int rowIndex = ((GridViewRow)((Button)sender).NamingContainer).RowIndex;
+
+            // Obtén el ID del puesto seleccionado
+            int CodigoPuesto = Convert.ToInt32(gvPuesto.DataKeys[rowIndex].Value);
+
+            // Redirige a la página Requisitos.aspx pasando el ID del puesto como parámetro en la URL
+            Response.Redirect("Requisitos.aspx?CodigoPuesto=" + CodigoPuesto);
         }
+
 
         protected void gvPuesto_SelectedIndexChanged(object sender, EventArgs e)
         {

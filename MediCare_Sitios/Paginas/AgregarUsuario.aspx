@@ -1,33 +1,69 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="AgregarUsuario.aspx.cs" Inherits="MediCare_Sitios.Formulario_web16" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-     <div>
-
-            <asp:Label ID="LblNombreUsuario" runat="server" Text="NombreUsuario"></asp:Label>  
-            <asp:TextBox ID="txtNombreUsuario" runat="server"></asp:TextBox>
-
-            <asp:Label ID="LblNombreCompleto" runat="server" Text="NombreCompleto"></asp:Label> 
-            <asp:TextBox ID="txtNombreCompleto" runat="server"></asp:TextBox>
-
-            <asp:Label ID="LblCorreoElectronico" runat="server" Text="CorreoElectronico" type="Email"></asp:Label>  
-            <asp:TextBox ID="txtCorreoElectronico" runat="server"></asp:TextBox>
-
-            <asp:Label ID="LblContrasena" runat="server" Text="Contrasena"></asp:Label>  
-            <asp:TextBox ID="txtlContrasena" runat="server" TextMode="Password"></asp:TextBox>
-
-            <asp:Image ID="imgURL" runat="server" class="img-profile rounded-circle"  Width="100px" Height="100px"/>
-            <asp:Label ID="LblImagen" runat="server" Text="Imagen"></asp:Label>  
-            <asp:FileUpload ID="FileUpload1" runat="server" Text="Imagen" />
-
-            <asp:Label ID="LblCodigoRol" runat="server" Text="CodigoRol"></asp:Label> 
-              <asp:DropDownList ID="txtCodigoRol" runat="server" class="form-control"></asp:DropDownList>
-
-            <asp:Label ID="LblCodigoEstado" runat="server" Text="CodigoEstado"></asp:Label> 
-           <asp:DropDownList ID="txtCodigoEstado" runat="server" class="form-control"></asp:DropDownList>
-           
+    <div class="container">
+        <div class="col-sm-12">
+            <h4 style="font-weight: bold; color: #ff7f00; margin-top: 40px; margin-bottom: 50px; text-align: center">Crear Nuevo Usuario</h4>
         </div>
-    <asp:Button ID="txtCancelar" runat="server" Text="Cancelar" OnClick="txtCancelar_Click" />
-    <asp:Button id="btnGuardarUsuario" runat="server" Text="Guardar usuario" OnClick="btnGuardarUsuario_Click" />
 
+        <div class="form-group">
+            <label for="txtNombreUsuario">Nombre de Usuario:</label>
+            <asp:TextBox ID="txtNombreUsuario" runat="server" CssClass="form-control form-control-user" Placeholder="Nombre de usuario" AutoComplete="off"></asp:TextBox>
+        </div>
+
+        <div class="form-group">
+            <label for="txtNombreCompleto">Nombre Completo:</label>
+            <asp:TextBox ID="txtNombreCompleto" runat="server" CssClass="form-control form-control-user" Placeholder="Nombre completo" AutoComplete="off"></asp:TextBox>
+        </div>
+
+        <div class="form-group">
+            <label for="txtCorreoElectronico">Correo Electrónico:</label>
+            <asp:TextBox ID="txtCorreoElectronico" runat="server" CssClass="form-control form-control-user" Placeholder="Correo electrónico" AutoComplete="off" TextMode="Email"></asp:TextBox>
+        </div>
+
+        <div class="form-group">
+            <label for="txtlContrasena">Contraseña:</label>
+            <asp:TextBox ID="txtlContrasena" runat="server" TextMode="Password" CssClass="form-control form-control-user" Placeholder="Contraseña" AutoComplete="off"></asp:TextBox>
+        </div>
+
+        <div class="form-group">
+            <label for="FileUpload1">Imagen:</label>
+            <asp:Image ID="imgURL" runat="server" CssClass="img-profile rounded-circle" Width="100px" Height="100px" />
+            <asp:FileUpload ID="FileUpload1" runat="server" Text="Imagen" />
+        </div>
+
+        <div class="form-group">
+            <label for="txtCodigoRol">Código de Rol:</label>
+            <asp:DropDownList ID="txtCodigoRol" runat="server" CssClass="form-control"></asp:DropDownList>
+        </div>
+
+        <div class="form-group">
+            <label for="txtCodigoEstado">Código de Estado:</label>
+            <asp:DropDownList ID="txtCodigoEstado" runat="server" CssClass="form-control"></asp:DropDownList>
+        </div>
+    </div>
+
+    <div class="container text-center">
+        <asp:Button ID="txtCancelar" runat="server" Text="Cancelar" OnClick="txtCancelar_Click" CssClass="btn btn-secondary m-2" />
+        <asp:Button ID="btnGuardarUsuario" runat="server" Text="Guardar usuario" OnClick="btnGuardarUsuario_Click" CssClass="btn btn-primary m-2" />
+    </div>
+
+    <script type="text/javascript">
+        var n = 300;
+        var i = document.getElementById("number");
+        var id = window.setInterval(function () {
+            document.onmousemove = function () {
+                n = 300;
+            };
+
+            n--;
+
+            if (n <= -1) {
+                alert("La sesión ha expirado");
+                location.href = "Login.aspx";
+            }
+        }, 1200);
+    </script>
 </asp:Content>

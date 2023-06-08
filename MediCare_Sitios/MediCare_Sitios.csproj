@@ -77,13 +77,16 @@
     <Content Include="css\sb-admin-2.min.css" />
     <Content Include="css\style.css" />
     <Content Include="css\stylecss.css" />
+    <Content Include="Paginas\AgregarUsuario.aspx" />
+    <Content Include="Paginas\RegiTelefOferente.aspx" />
+    <Content Include="Paginas\RegiReferenteOferente.aspx" />
+    <Content Include="Paginas\RegiCorreoOfe.aspx" />
     <Content Include="Paginas\RegistrarRequisito.aspx" />
     <Content Include="Paginas\Requisitos.aspx" />
     <Content Include="Paginas\EditarPuesto.aspx" />
     <Content Include="Paginas\ModificarPuesto.aspx" />
     <Content Include="Paginas\MantUsuario.aspx" />
-    <Content Include="Paginas\AgregarUsuario.aspx" />
-    <Content Include="Paginas\RegistrarOferente.aspx" />
+    <Content Include="Paginas\RegisOferente.aspx" />
     <Content Include="Paginas\MostrarImagen.aspx" />
     <Content Include="Paginas\RegistroPuesto.aspx" />
     <Content Include="Paginas\Puestos.aspx" />
@@ -1771,6 +1774,34 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Paginas\AgregarUsuario.aspx.cs">
+      <DependentUpon>AgregarUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\AgregarUsuario.aspx.designer.cs">
+      <DependentUpon>AgregarUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\RegiTelefOferente.aspx.cs">
+      <DependentUpon>RegiTelefOferente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\RegiTelefOferente.aspx.designer.cs">
+      <DependentUpon>RegiTelefOferente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\RegiReferenteOferente.aspx.cs">
+      <DependentUpon>RegiReferenteOferente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\RegiReferenteOferente.aspx.designer.cs">
+      <DependentUpon>RegiReferenteOferente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\RegiCorreoOfe.aspx.cs">
+      <DependentUpon>RegiCorreoOfe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\RegiCorreoOfe.aspx.designer.cs">
+      <DependentUpon>RegiCorreoOfe.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Paginas\RegistrarRequisito.aspx.cs">
       <DependentUpon>RegistrarRequisito.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1806,19 +1837,12 @@
     <Compile Include="Paginas\MantUsuario.aspx.designer.cs">
       <DependentUpon>MantUsuario.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Paginas\AgregarUsuario.aspx.cs">
-      <DependentUpon>AgregarUsuario.aspx</DependentUpon>
+    <Compile Include="Paginas\RegisOferente.aspx.cs">
+      <DependentUpon>RegisOferente.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Paginas\AgregarUsuario.aspx.designer.cs">
-      <DependentUpon>AgregarUsuario.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Paginas\RegistrarOferente.aspx.cs">
-      <DependentUpon>RegistrarOferente.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Paginas\RegistrarOferente.aspx.designer.cs">
-      <DependentUpon>RegistrarOferente.aspx</DependentUpon>
+    <Compile Include="Paginas\RegisOferente.aspx.designer.cs">
+      <DependentUpon>RegisOferente.aspx</DependentUpon>
     </Compile>
     <Compile Include="Paginas\MostrarImagen.aspx.cs">
       <DependentUpon>MostrarImagen.aspx</DependentUpon>

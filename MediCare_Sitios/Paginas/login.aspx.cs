@@ -17,14 +17,20 @@ namespace MediCare_Sitios.Paginas
                 Session["usuario"] = "";
                 Session["contador"] = 0;
             }
+            else
+            {
+                Session["username"] = "";
+                Session["fullname"] = "";
+                Session["rol"] = "";
+            }
 
         }
+
         protected void Btn_Ingresar_Click(object sender, EventArgs e)
         {
             try
             {
                 if (Usuario == null) Usuario = new EntidadUsuario();
-
 
                 Usuario.NombreUsuario = Txt_usuario.Text;
                 Usuario.Contrasena = Txt_contrasena.Text;
@@ -33,11 +39,9 @@ namespace MediCare_Sitios.Paginas
 
                 if (String.IsNullOrEmpty(Mensaje))
                 {
-
                     if (string.IsNullOrEmpty(Session["usuario"].ToString()))
                     {
                         Session["usuario"] = Usuario.NombreUsuario;
-
                         Session["contador"] = Convert.ToInt32(Session["contador"].ToString()) + 1;
                     }
                     else
@@ -48,15 +52,12 @@ namespace MediCare_Sitios.Paginas
 
                             if (Convert.ToInt32(Session["contador"].ToString()) == 3)
                             {
-
                                 obj_negocio.BloquearUsuario(Usuario);
                             }
-
                         }
                         else
                         {
                             Session["usuario"] = Usuario.NombreUsuario;
-
                             Session["contador"] = Convert.ToInt32(Session["contador"].ToString()) + 1;
                         }
                     }

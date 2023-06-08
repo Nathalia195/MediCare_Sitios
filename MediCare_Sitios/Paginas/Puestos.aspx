@@ -12,7 +12,7 @@
             <h2 style="text-align: center;">Puestos</h2>
             <div style="text-align: center; margin-top: 50px; margin-bottom: 10px;">
                 <a id="btnAgregarPuesto" runat="server" class="btn btn-primary" href="RegistroPuesto.aspx">
-                    <i class="fas fa-plus" style="margin-right:5px"></i>  Crear Puesto</a>
+                    <i class="fas fa-plus" style="margin-right: 5px"></i>Crear Puesto</a>
 
                 <%--   <asp:LinkButton ID="btnModificar" runat="server" CssClass="btn btn-warning">
     <i class="fas fa-pencil-alt"></i> Modificar
@@ -33,14 +33,14 @@
                 </asp:GridView>--%>
                 <asp:GridView ID="gvPuesto" CssClass="table table-striped table-hover" runat="server" AutoGenerateColumns="false" Width="100%"
                     OnRowEditing="gvPuesto_RowEditing" OnRowCancelingEdit="gvPuesto_RowCancelingEdit" OnRowUpdating="gvPuesto_RowUpdating"
-                    OnRowDeleting="gvPuesto_RowDeleting"  OnSelectedIndexChanged="gvPuesto_SelectedIndexChanged" DataKeyNames="CodigoPuesto">
-                    <Columns >
-                        <asp:BoundField DataField="CodigoPuesto" HeaderText="Código del Puesto" ReadOnly="true"/>
+                    OnRowDeleting="gvPuesto_RowDeleting" OnSelectedIndexChanged="gvPuesto_SelectedIndexChanged" DataKeyNames="CodigoPuesto">
+                    <Columns>
+                        <asp:BoundField DataField="CodigoPuesto" HeaderText="Código del Puesto" ReadOnly="true" />
                         <asp:BoundField DataField="NombrePuesto" HeaderText="Nombre del Puesto" />
 
-                         <asp:CommandField ShowEditButton="true" ButtonType="Button" ControlStyle-CssClass="btn btn-warning"/>
-                     <asp:CommandField ShowDeleteButton="true" ButtonType="Button" ControlStyle-CssClass="btn btn-danger"/>
-                           <asp:TemplateField HeaderText="Requisitos">
+                        <asp:CommandField ShowEditButton="true" ButtonType="Button" ControlStyle-CssClass="btn btn-warning" />
+                        <asp:CommandField ShowDeleteButton="true" ButtonType="Button" ControlStyle-CssClass="btn btn-danger" />
+                        <asp:TemplateField HeaderText="Requisitos">
                             <ItemTemplate>
                                 <asp:Button ID="btnRequisitos" runat="server" Text="Requisitos" OnClick="btnRequisitos_Click" class="btn btn-success" />
                             </ItemTemplate>
@@ -56,4 +56,20 @@
 
 
         </div>
+        <script type="text/javascript">
+            n = 300
+            var i = document.getElementById("number");
+            var id = window.setInterval(function () {
+                document.onmousemove = function () {
+                    n = 300
+                };
+
+                n--;
+
+                if (n <= -1) {
+                    alert("La sesión expiro");
+                    location.href = "Login.aspx";
+                }
+            }, 1200);
+        </script>
 </asp:Content>

@@ -15,22 +15,13 @@ namespace MediCare_Sitios
     {
 
         /// <summary>
-        /// Control btnRistoferente.
+        /// Control btnAgregarOferente.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton btnRistoferente;
-
-        /// <summary>
-        /// Control btnModificar.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton btnModificar;
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor btnAgregarOferente;
 
         /// <summary>
         /// Control gvOferentes.

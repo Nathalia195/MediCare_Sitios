@@ -2,7 +2,8 @@
 using Entidad;
 using System.Collections.Generic;
 
-namespace MediCare_Sitios
+
+namespace Negocio
 {
     public class NegocioUsuario
     {
@@ -25,9 +26,16 @@ namespace MediCare_Sitios
             if (string.IsNullOrEmpty(Usuario.NombreUsuario) || string.IsNullOrEmpty(Usuario.Contrasena)) return ""; else return "ok";
         }
 
-        private string ValidarUsuario1(EntidadUsuario Usuario)
+        private string ValidarUsuario1(EntidadUsuario Usuario, int opcion)
         {
-            if (string.IsNullOrEmpty(Usuario.NombreUsuario) || string.IsNullOrEmpty(Usuario.NombreCompleto) || string.IsNullOrEmpty(Usuario.CorreoElectronico) || string.IsNullOrEmpty(Usuario.Contrasena) || string.IsNullOrEmpty(Usuario.Imagen.ToString())) return "Debe de completar todos los campos"; else return "";
+            if (opcion == 0)
+            {
+                if (string.IsNullOrEmpty(Usuario.NombreUsuario) || string.IsNullOrEmpty(Usuario.NombreCompleto) || string.IsNullOrEmpty(Usuario.CorreoElectronico) || string.IsNullOrEmpty(Usuario.Contrasena) || string.IsNullOrEmpty(Usuario.Imagen.ToString())) return "Debe de completar todos los campos"; else return "";
+            }
+            else
+            {
+                if (string.IsNullOrEmpty(Usuario.NombreCompleto) || string.IsNullOrEmpty(Usuario.CorreoElectronico)) return "Debe de completar todos los campos"; else return "";
+            }
         }
 
         public byte[] TraerAvatar(EntidadUsuario Usuario)
@@ -35,20 +43,19 @@ namespace MediCare_Sitios
             return obj_datos.TraerAvatar(Usuario);
         }
 
-
         public List<EntidadUsuario> GetUsuario()
         {
             return obj_datos.GetUsuario();
         }
+
         public void BloquearUsuario(EntidadUsuario usuario)
         {
             obj_datos.BloquearUsuario(usuario);
         }
 
-
         public string InsertarUsuarios(EntidadUsuario mcEntidad)
         {
-            string mensaje = ValidarUsuario1(mcEntidad);
+            string mensaje = ValidarUsuario1(mcEntidad, 0);
 
             if (string.IsNullOrEmpty(mensaje))
             {
@@ -58,18 +65,31 @@ namespace MediCare_Sitios
             {
                 return mensaje;
             }
-
-
-
         }
 
+        public List<EntidadUsuario> TraerUsuario(EntidadUsuario mcEntidad)
+        {
+            return obj_datos.TraerUsuario(mcEntidad);
+        }
 
+        public string EditarUsuario(EntidadUsuario mcEntidad)
+        {
 
-        //public void Editar(EntidadUsuario mcEntidad)
-        //{
-        //    obj_datos.EditarUsuario(mcEntidad);
-        //}
+            string mensaje = ValidarUsuario1(mcEntidad, 1);
 
+            if (string.IsNullOrEmpty(mensaje))
+            {
+                return obj_datos.EditarUsuario(mcEntidad);
+            }
+            else
+            {
+                return mensaje;
+            }
+        }
 
+        public string EliminarUsuarios(string username)
+        {
+            return obj_datos.EliminarUsuarios(username);
+        }
     }
 }

@@ -17,18 +17,19 @@ namespace MediCare_Sitios
         {
             if (!IsPostBack)
             {
-                if (Session["llave"] != null && Request.UrlReferrer.AbsolutePath.EndsWith("Puestos.aspx"))
+                if (Request.QueryString["CodigoPuesto"] != null)
                 {
-                    int codigoPuesto = Convert.ToInt32(Session["llave"]);
+                    int CodigoPuesto = Convert.ToInt32(Request.QueryString["CodigoPuesto"]);
 
-                    // Aquí puedes usar el código de puesto para cargar los requisitos correspondientes al valor seleccionado en el GridView
-                    List<EntidadRequisitos> requisitos = obj_Requisito.GetRequisitos(codigoPuesto);
+                    // Utiliza el ID del puesto para cargar los requisitos relacionados en el GridView
+                    List<EntidadRequisitos> requisitos = obj_Requisito.GetRequisitos(CodigoPuesto);
 
                     gvRequisito.DataSource = requisitos;
                     gvRequisito.DataBind();
                 }
                 else
                 {
+                    // Carga todos los requisitos si no se proporciona el ID del puesto
                     List<EntidadRequisitos> requisitos = obj_Requisito.GetRequisito();
 
                     gvRequisito.DataSource = requisitos;
@@ -36,6 +37,7 @@ namespace MediCare_Sitios
                 }
             }
         }
+
 
         protected void CargarRequisito()
         {

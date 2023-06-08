@@ -15,6 +15,33 @@ namespace MediCare_Sitios
     {
 
         /// <summary>
+        /// Control btnAgregarReferente.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor btnAgregarReferente;
+
+        /// <summary>
+        /// Control btnAgregarTelefono.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor btnAgregarTelefono;
+
+        /// <summary>
+        /// Control btnAgregarCorreo.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor btnAgregarCorreo;
+
+        /// <summary>
         /// Control txtIdentificacion.
         /// </summary>
         /// <remarks>
@@ -69,21 +96,21 @@ namespace MediCare_Sitios
         protected global::System.Web.UI.WebControls.TextBox txtFechaNaci;
 
         /// <summary>
-        /// Control txtCurricu.
+        /// Control flUpcurriculum.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCurricu;
+        protected global::System.Web.UI.WebControls.FileUpload flUpcurriculum;
 
         /// <summary>
-        /// Control btnRegistrarOferente.
+        /// Control btnRegisOferente.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnRegistrarOferente;
+        protected global::System.Web.UI.WebControls.Button btnRegisOferente;
     }
 }

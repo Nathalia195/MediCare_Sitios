@@ -11,25 +11,34 @@ namespace MediCare_Sitios
 {
 
 
-    public partial class Formulario_web13
+    public partial class Formulario_web113
     {
 
         /// <summary>
-        /// Control btnAgregarUsuario.
+        /// Control txtIdentificacion.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAgregarUsuario;
+        protected global::System.Web.UI.WebControls.TextBox txtIdentificacion;
 
         /// <summary>
-        /// Control Dgv_usuario.
+        /// Control txttelefono.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView Dgv_usuario;
+        protected global::System.Web.UI.WebControls.TextBox txttelefono;
+
+        /// <summary>
+        /// Control btnRegistrarTeleOferente.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnRegistrarTeleOferente;
     }
 }
