@@ -1,9 +1,11 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="RegiTelefOferente.aspx.cs" Inherits="MediCare_Sitios.Formulario_web113" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="RegiCorreoOfe.aspx.cs" Inherits="MediCare_Sitios.Formulario_web111" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-      <div class="container text-center">
-    <h4 style="font-weight: bold; color: #ff7f00; margin-top: 40px; margin-bottom: 50px; text-align: center">Registrar Teléfono Oferente</h4>
+
+   <div class="container text-center">
+    <h4 style="font-weight: bold; color: #ff7f00; margin-top: 40px; margin-bottom: 50px; text-align: center">Registrar Correo Oferente</h4>
 </div>
 
 <div class="container">
@@ -12,11 +14,11 @@
         <asp:TextBox ID="txtIdentificacion" runat="server" CssClass="form-control"></asp:TextBox>
     </div>
     <div class="form-group">
-        <label for="txttelefono">Teléfono:</label>
-        <asp:TextBox ID="txttelefono" runat="server" CssClass="form-control"></asp:TextBox>
+        <label for="txtcorreo">Correo:</label>
+        <asp:TextBox ID="txtcorreo" runat="server" CssClass="form-control"></asp:TextBox>
     </div>
     <div class="form-group text-center">
-        <asp:Button ID="btnRegistrarTeleOferente" runat="server" Text="Registrar" CssClass="btn btn-primary" OnClick="btnRegistrarTeleOferente_Click" />
+        <asp:Button ID="btnRegistrarcorreoOferente" runat="server" Text="Registrar" CssClass="btn btn-primary" OnClick="btnRegistrarcorreoOferente_Click" />
     </div>
 </div>
 
@@ -31,7 +33,7 @@
 
         if (n <= -1) {
             alert("La sesión ha expirado");
-            location.href = "Login.aspx";
+            location.href = "login.aspx";
         }
     }, 1200);
 </script>

@@ -22,7 +22,7 @@ namespace MediCare_Sitios.Paginas
                 }
                 else
                 {
-                    Response.Redirect("Login.aspx");
+                    Response.Redirect("login.aspx");
                 }
             }
             catch (Exception ex)

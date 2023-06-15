@@ -54,7 +54,7 @@
 
             if (n <= -1) {
                 alert("La sesión expiró");
-                location.href = "Login.aspx";
+                location.href = "login.aspx";
             }
         }, 1000);
     </script>

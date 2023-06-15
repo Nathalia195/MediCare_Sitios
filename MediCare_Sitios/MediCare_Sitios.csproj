@@ -77,21 +77,21 @@
     <Content Include="css\sb-admin-2.min.css" />
     <Content Include="css\style.css" />
     <Content Include="css\stylecss.css" />
-    <Content Include="Paginas\AgregarUsuario.aspx" />
-    <Content Include="Paginas\RegiTelefOferente.aspx" />
-    <Content Include="Paginas\RegiReferenteOferente.aspx" />
-    <Content Include="Paginas\RegiCorreoOfe.aspx" />
-    <Content Include="Paginas\RegistrarRequisito.aspx" />
-    <Content Include="Paginas\Requisitos.aspx" />
-    <Content Include="Paginas\EditarPuesto.aspx" />
-    <Content Include="Paginas\ModificarPuesto.aspx" />
-    <Content Include="Paginas\MantUsuario.aspx" />
-    <Content Include="Paginas\RegisOferente.aspx" />
-    <Content Include="Paginas\MostrarImagen.aspx" />
-    <Content Include="Paginas\RegistroPuesto.aspx" />
-    <Content Include="Paginas\Puestos.aspx" />
-    <Content Include="Paginas\Oferentes.aspx" />
-    <Content Include="Paginas\Index.aspx" />
+    <Content Include="AgregarUsuario.aspx" />
+    <Content Include="RegiTelefOferente.aspx" />
+    <Content Include="RegiReferenteOferente.aspx" />
+    <Content Include="RegiCorreoOfe.aspx" />
+    <Content Include="RegistrarRequisito.aspx" />
+    <Content Include="Requisitos.aspx" />
+    <Content Include="EditarPuesto.aspx" />
+    <Content Include="ModificarPuesto.aspx" />
+    <Content Include="MantUsuario.aspx" />
+    <Content Include="RegisOferente.aspx" />
+    <Content Include="MostrarImagen.aspx" />
+    <Content Include="RegistroPuesto.aspx" />
+    <Content Include="Puestos.aspx" />
+    <Content Include="Oferentes.aspx" />
+    <Content Include="Index.aspx" />
     <Content Include="img\logo%281%29.png" />
     <Content Include="img\logo%282%29.png" />
     <Content Include="img\logo%283%29.png" />
@@ -104,7 +104,7 @@
     <Content Include="js\prueba.js" />
     <Content Include="js\sb-admin-2.js" />
     <Content Include="js\sb-admin-2.min.js" />
-    <Content Include="Paginas\login.aspx" />
+    <Content Include="login.aspx" />
     <Content Include="vendor\bootstrap\js\bootstrap.bundle.js" />
     <Content Include="vendor\bootstrap\js\bootstrap.bundle.min.js" />
     <Content Include="vendor\bootstrap\js\bootstrap.js" />
@@ -1772,115 +1772,115 @@
     <Content Include="vendor\jquery\jquery.slim.js" />
     <Content Include="vendor\jquery\jquery.slim.min.js" />
     <Content Include="Web.config" />
-    <Content Include="Paginas\AsignarPuesto.aspx" />
-    <Content Include="Paginas\AsignarRequisitos.aspx" />
-    <Content Include="Paginas\VerPuestos.aspx" />
-    <Content Include="Paginas\VerRequisitos.aspx" />
+    <Content Include="AsignarPuesto.aspx" />
+    <Content Include="AsignarRequisitos.aspx" />
+    <Content Include="VerPuestos.aspx" />
+    <Content Include="VerRequisitos.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Paginas\AgregarUsuario.aspx.cs">
+    <Compile Include="AgregarUsuario.aspx.cs">
       <DependentUpon>AgregarUsuario.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Paginas\AgregarUsuario.aspx.designer.cs">
+    <Compile Include="AgregarUsuario.aspx.designer.cs">
       <DependentUpon>AgregarUsuario.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Paginas\RegiTelefOferente.aspx.cs">
+    <Compile Include="RegiTelefOferente.aspx.cs">
       <DependentUpon>RegiTelefOferente.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Paginas\RegiTelefOferente.aspx.designer.cs">
+    <Compile Include="RegiTelefOferente.aspx.designer.cs">
       <DependentUpon>RegiTelefOferente.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Paginas\RegiReferenteOferente.aspx.cs">
+    <Compile Include="RegiReferenteOferente.aspx.cs">
       <DependentUpon>RegiReferenteOferente.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Paginas\RegiReferenteOferente.aspx.designer.cs">
+    <Compile Include="RegiReferenteOferente.aspx.designer.cs">
       <DependentUpon>RegiReferenteOferente.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Paginas\RegiCorreoOfe.aspx.cs">
+    <Compile Include="RegiCorreoOfe.aspx.cs">
       <DependentUpon>RegiCorreoOfe.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Paginas\RegiCorreoOfe.aspx.designer.cs">
+    <Compile Include="RegiCorreoOfe.aspx.designer.cs">
       <DependentUpon>RegiCorreoOfe.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Paginas\RegistrarRequisito.aspx.cs">
+    <Compile Include="RegistrarRequisito.aspx.cs">
       <DependentUpon>RegistrarRequisito.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Paginas\RegistrarRequisito.aspx.designer.cs">
+    <Compile Include="RegistrarRequisito.aspx.designer.cs">
       <DependentUpon>RegistrarRequisito.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Paginas\Requisitos.aspx.cs">
+    <Compile Include="Requisitos.aspx.cs">
       <DependentUpon>Requisitos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Paginas\Requisitos.aspx.designer.cs">
+    <Compile Include="Requisitos.aspx.designer.cs">
       <DependentUpon>Requisitos.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Paginas\EditarPuesto.aspx.cs">
+    <Compile Include="EditarPuesto.aspx.cs">
       <DependentUpon>EditarPuesto.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Paginas\EditarPuesto.aspx.designer.cs">
+    <Compile Include="EditarPuesto.aspx.designer.cs">
       <DependentUpon>EditarPuesto.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Paginas\ModificarPuesto.aspx.cs">
+    <Compile Include="ModificarPuesto.aspx.cs">
       <DependentUpon>ModificarPuesto.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Paginas\ModificarPuesto.aspx.designer.cs">
+    <Compile Include="ModificarPuesto.aspx.designer.cs">
       <DependentUpon>ModificarPuesto.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Paginas\MantUsuario.aspx.cs">
+    <Compile Include="MantUsuario.aspx.cs">
       <DependentUpon>MantUsuario.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Paginas\MantUsuario.aspx.designer.cs">
+    <Compile Include="MantUsuario.aspx.designer.cs">
       <DependentUpon>MantUsuario.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Paginas\RegisOferente.aspx.cs">
+    <Compile Include="RegisOferente.aspx.cs">
       <DependentUpon>RegisOferente.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Paginas\RegisOferente.aspx.designer.cs">
+    <Compile Include="RegisOferente.aspx.designer.cs">
       <DependentUpon>RegisOferente.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Paginas\MostrarImagen.aspx.cs">
+    <Compile Include="MostrarImagen.aspx.cs">
       <DependentUpon>MostrarImagen.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Paginas\MostrarImagen.aspx.designer.cs">
+    <Compile Include="MostrarImagen.aspx.designer.cs">
       <DependentUpon>MostrarImagen.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Paginas\RegistroPuesto.aspx.cs">
+    <Compile Include="RegistroPuesto.aspx.cs">
       <DependentUpon>RegistroPuesto.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Paginas\RegistroPuesto.aspx.designer.cs">
+    <Compile Include="RegistroPuesto.aspx.designer.cs">
       <DependentUpon>RegistroPuesto.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Paginas\Puestos.aspx.cs">
+    <Compile Include="Puestos.aspx.cs">
       <DependentUpon>Puestos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Paginas\Puestos.aspx.designer.cs">
+    <Compile Include="Puestos.aspx.designer.cs">
       <DependentUpon>Puestos.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Paginas\Oferentes.aspx.cs">
+    <Compile Include="Oferentes.aspx.cs">
       <DependentUpon>Oferentes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Paginas\Oferentes.aspx.designer.cs">
+    <Compile Include="Oferentes.aspx.designer.cs">
       <DependentUpon>Oferentes.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Paginas\Index.aspx.cs">
+    <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Paginas\Index.aspx.designer.cs">
+    <Compile Include="Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
     <Compile Include="MasterPage.Master.cs">
@@ -1890,40 +1890,40 @@
     <Compile Include="MasterPage.Master.designer.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>
     </Compile>
-    <Compile Include="Paginas\login.aspx.cs">
+    <Compile Include="login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Paginas\login.aspx.designer.cs">
+    <Compile Include="login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Paginas\AsignarPuesto.aspx.cs">
+    <Compile Include="AsignarPuesto.aspx.cs">
       <DependentUpon>AsignarPuesto.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Paginas\AsignarPuesto.aspx.designer.cs">
+    <Compile Include="AsignarPuesto.aspx.designer.cs">
       <DependentUpon>AsignarPuesto.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Paginas\AsignarRequisitos.aspx.cs">
+    <Compile Include="AsignarRequisitos.aspx.cs">
       <DependentUpon>AsignarRequisitos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Paginas\AsignarRequisitos.aspx.designer.cs">
+    <Compile Include="AsignarRequisitos.aspx.designer.cs">
       <DependentUpon>AsignarRequisitos.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Paginas\VerPuestos.aspx.cs">
+    <Compile Include="VerPuestos.aspx.cs">
       <DependentUpon>VerPuestos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Paginas\VerPuestos.aspx.designer.cs">
+    <Compile Include="VerPuestos.aspx.designer.cs">
       <DependentUpon>VerPuestos.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Paginas\VerRequisitos.aspx.cs">
+    <Compile Include="VerRequisitos.aspx.cs">
       <DependentUpon>VerRequisitos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Paginas\VerRequisitos.aspx.designer.cs">
+    <Compile Include="VerRequisitos.aspx.designer.cs">
       <DependentUpon>VerRequisitos.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -2118,6 +2118,9 @@
       <Project>{c8f20668-b23a-4c85-a3d7-c1720f9286cf}</Project>
       <Name>Negocio</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Paginas\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

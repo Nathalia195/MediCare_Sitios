@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="EditarPuesto.aspx.cs" Inherits="MediCare_Sitios.Formulario_web18" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="RegistrarRequisito.aspx.cs" Inherits="MediCare_Sitios.Formulario_web110" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -20,20 +20,24 @@
 
     <div class="container" style="text-align: center">
         <b>
-            <h5 style="color: #ff7f00; margin-top: 40px; margin-bottom: 50px">Agregar un nuevo puesto</h5>
+            <h5 style="color: #ff7f00; margin-top: 40px; margin-bottom: 50px">Agregar un nuevo requisito</h5>
         </b>
     </div>
     <div class="container">
         <div class="form-group">
-            <label for="txtCodigoPuesto">Código del Puesto:</label>
-            <asp:TextBox ID="txtPuesto" runat="server" CssClass="form-control"></asp:TextBox>
+            <label for="txtCodigoPuesto">Código del Requisito:</label>
+            <asp:TextBox ID="txtCodigoRequisito" runat="server" CssClass="form-control"></asp:TextBox>
         </div>
         <div class="form-group">
-            <label for="txtNombreInteres">Nombre del Puesto:</label>
-            <asp:TextBox ID="txtNombrePuesto" runat="server" CssClass="form-control"></asp:TextBox>
+            <label for="txtNombreInteres">Nombre del Requisito:</label>
+            <asp:TextBox ID="txtNombreRequisito" runat="server" CssClass="form-control"></asp:TextBox>
+        </div>
+        <div class="form-group">
+            <label for="txtNombreInteres">Código del Puesto:</label>
+            <asp:TextBox ID="txtCodigoPuesto" runat="server" CssClass="form-control"></asp:TextBox>
         </div>
         <div class="form-group" style="justify-content: center; align-items: center; text-align: center; margin-top: 40px">
-            <asp:Button ID="btnEditarPuesto" runat="server" Text="Guardar" CssClass="btn btn-primary" OnClick="editarPuesto_Click" />
+            <asp:Button ID="btnAgregarRequisito" runat="server" Text="Agregar" CssClass="btn btn-primary" OnClick="btnAgregarRequisito_Click" />
         </div>
     </div>
     <script type="text/javascript">
@@ -48,7 +52,7 @@
 
             if (n <= -1) {
                 alert("La sesión expiro");
-                location.href = "Login.aspx";
+                location.href = "login.aspx";
             }
         }, 1200);
     </script>

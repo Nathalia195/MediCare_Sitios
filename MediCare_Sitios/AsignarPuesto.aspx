@@ -48,7 +48,7 @@
 
             if (n <= -1) {
                 alert("La sesión expiro");
-                location.href = "Login.aspx";
+                location.href = "login.aspx";
             }
         }, 1200);
     </script>

@@ -33,7 +33,7 @@ namespace MediCare_Sitios
                 }
                 else
                 {
-                    Response.Redirect("Login.aspx");
+                    Response.Redirect("login.aspx");
                 }
             }
         }

@@ -22,7 +22,7 @@ namespace MediCare_Sitios
             Lbl_usuario.Text = username;
 
 
-            imgURL.ImageUrl = "Paginas/MostrarImagen.aspx?id=" + Lbl_usuario.Text;
+            imgURL.ImageUrl = "MostrarImagen.aspx?id=" + Lbl_usuario.Text;
 
 
         }
