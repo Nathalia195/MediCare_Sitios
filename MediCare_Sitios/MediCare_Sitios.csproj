@@ -1772,6 +1772,10 @@
     <Content Include="vendor\jquery\jquery.slim.js" />
     <Content Include="vendor\jquery\jquery.slim.min.js" />
     <Content Include="Web.config" />
+    <Content Include="Paginas\AsignarPuesto.aspx" />
+    <Content Include="Paginas\AsignarRequisitos.aspx" />
+    <Content Include="Paginas\VerPuestos.aspx" />
+    <Content Include="Paginas\VerRequisitos.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Paginas\AgregarUsuario.aspx.cs">
@@ -1894,6 +1898,34 @@
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Paginas\AsignarPuesto.aspx.cs">
+      <DependentUpon>AsignarPuesto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\AsignarPuesto.aspx.designer.cs">
+      <DependentUpon>AsignarPuesto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\AsignarRequisitos.aspx.cs">
+      <DependentUpon>AsignarRequisitos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\AsignarRequisitos.aspx.designer.cs">
+      <DependentUpon>AsignarRequisitos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\VerPuestos.aspx.cs">
+      <DependentUpon>VerPuestos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\VerPuestos.aspx.designer.cs">
+      <DependentUpon>VerPuestos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\VerRequisitos.aspx.cs">
+      <DependentUpon>VerRequisitos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\VerRequisitos.aspx.designer.cs">
+      <DependentUpon>VerRequisitos.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="MasterPage.Master" />

@@ -48,7 +48,8 @@
         <asp:FileUpload ID="flUpcurriculum" runat="server" />
     </div>
     <div class="form-group text-center">
-        <asp:Button ID="btnRegisOferente" runat="server" Text="Registrar" CssClass="btn btn-primary" OnClick="btnRegisOferente_Click" />
+     
+        <asp:Button ID="btnRegisOferente" runat="server" Text="Registrar" CssClass="btn btn-primary" OnClick="btnRegisOferente_Click"/>
     </div>
 </div>
 

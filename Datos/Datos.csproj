@@ -46,6 +46,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DatosCorreoOferente.cs" />
+    <Compile Include="DatosOferentePuesto.cs" />
+    <Compile Include="DatosOferentePuestoRequisito.cs" />
     <Compile Include="DatosOferentes.cs" />
     <Compile Include="DatosPuesto.cs" />
     <Compile Include="DatosEstado.cs" />

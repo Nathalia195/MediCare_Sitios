@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Web;
 using System.Web.UI;
+using System.Web.UI.WebControls;
 
 namespace MediCare_Sitios
 {
@@ -11,7 +12,7 @@ namespace MediCare_Sitios
     {
 
         NegocioOferente obj_negociooferente = new NegocioOferente();
-
+         private NegocioOferente negocioOferente = new NegocioOferente();
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -19,35 +20,17 @@ namespace MediCare_Sitios
             if (!IsPostBack)
             {
 
-                List<EntidadOferentes> oferentes = obj_negociooferente.GetUsuario();
+                List<EntidadOferentes> oferentes = obj_negociooferente.GetOferente();
 
                 gvOferentes.DataSource = oferentes;
                 gvOferentes.DataBind();
-
-
+                //CargarOferente();
+                Session["llave"] = null;
 
             }
-            else
-            {
-                // Response.Redirect("login.aspx");
-                Response.Redirect("RegisOferente.aspx");
-            }
+       
 
         }
-        private void MostrarMensaje2(string mensaje, string url)
-        {
-            string message = mensaje;
-            string url1 = url;
-            string script = "{ alert('";
-            script += message;
-            script += "');";
-            script += "window.location = '";
-            script += url1;
-            script += "'; }";
-            ScriptManager.RegisterStartupScript(this.Page, Page.GetType(), "alert", script, true);
-        }
-
-        //Metodo para ir la pantalla para poder editar y eliminar 
 
 
         protected void gvOferentes_RowCommand(object sender, System.Web.UI.WebControls.GridViewCommandEventArgs e)
@@ -60,26 +43,42 @@ namespace MediCare_Sitios
 
                 Response.Redirect("RegisOferente.aspx");
             }
-            else
+            else if(e.CommandName == "Select1")
             {
                 int fila = Convert.ToInt32(e.CommandArgument);
                 string columna = gvOferentes.Rows[fila].Cells[0].Text;
 
                 string mensaje = obj_negociooferente.EliminarOferente(columna);
-
+                Response.Redirect("Oferentes.aspx");
                 string username = Session["username"].ToString();
+            }else if (e.CommandName == "Select2")
+            {
+                int fila = Convert.ToInt32(e.CommandArgument);
+                string columna = gvOferentes.Rows[fila].Cells[0].Text;
+                Session["llave2"] = columna;
 
+                Response.Redirect("AsignarPuesto.aspx");
+            }
+            else
+            {
+                int fila = Convert.ToInt32(e.CommandArgument);
+                string columna = gvOferentes.Rows[fila].Cells[0].Text;
+                Session["llave3"] = columna;
 
-                if (columna == username)
-                {
-                    Session["Indicador"] = "0";
-                    //   MostrarMensaje2(mensaje, "login.aspx");
-                }
-                else
-                {
-                    //MostrarMensaje2(mensaje, "Oferentes.aspx");
-                }
+                Response.Redirect("VerPuestos.aspx");
             }
         }
+
+
+        protected void CargarOferente()
+        {
+            {
+                IEnumerable<EntidadOferentes> puestos = negocioOferente.GetOferente();
+                gvOferentes.DataSource = puestos;
+                gvOferentes.DataBind();
+            }
+        }
+
+  
     }
 }

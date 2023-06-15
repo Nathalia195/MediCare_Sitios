@@ -17,13 +17,11 @@
 
     <!-- Custom styles for this template-->
     <link href="~/css/sb-admin-2.min.css" rel="stylesheet">
-    <style>
+ <style>
         .footer {
-            background-color: #ddeeff; /* Reemplaza "your-color" con el color deseado */
-            /* Otros estilos opcionales para el footer */
-            color: #000000; /* Color del texto en el footer */
-            /* Espaciado interno del footer */
-            /* Otros estilos de diseño según tus necesidades */
+            background-color: #ddeeff; 
+            color: #000000;            
+            margin-top:100px;
         }
     </style>
 </head>
@@ -124,7 +122,7 @@
 
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400" runat="server" type="submit"></i>
                                     Cerrar Sesión
                                 </a>
                             </div>

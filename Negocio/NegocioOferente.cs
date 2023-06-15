@@ -9,7 +9,7 @@ namespace Negocio
         DatosOferentes obj_datos = new DatosOferentes();
 
         //Negocio Mostrar Usuario
-        public List<EntidadOferentes> GetUsuario()
+        public List<EntidadOferentes> GetOferente()
         {
             return obj_datos.GetOferente();
         }

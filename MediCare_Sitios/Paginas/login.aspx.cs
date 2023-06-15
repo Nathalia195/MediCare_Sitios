@@ -1,6 +1,7 @@
 ﻿using Entidad;
 using Negocio;
 using System;
+using System.Data.SqlClient;
 using System.Web.UI;
 
 namespace MediCare_Sitios.Paginas
@@ -12,6 +13,7 @@ namespace MediCare_Sitios.Paginas
 
         protected void Page_Load(object sender, EventArgs e)
         {
+
             if (!IsPostBack)
             {
                 Session["usuario"] = "";
@@ -30,12 +32,14 @@ namespace MediCare_Sitios.Paginas
         {
             try
             {
+                
                 if (Usuario == null) Usuario = new EntidadUsuario();
 
                 Usuario.NombreUsuario = Txt_usuario.Text;
                 Usuario.Contrasena = Txt_contrasena.Text;
 
                 string Mensaje = obj_negocio.Autentificacion(Usuario);
+
 
                 if (String.IsNullOrEmpty(Mensaje))
                 {
@@ -72,6 +76,8 @@ namespace MediCare_Sitios.Paginas
                     Session["rol"] = Mensaje.Split(',')[2];
                     Response.Redirect("Index.aspx");
                 }
+
+        
             }
             catch (Exception ex)
             {

@@ -24,15 +24,24 @@
                     <Columns>
                         <asp:BoundField DataField="Identificacion" HeaderText="Identificacion" />
                         <asp:BoundField DataField="CodigoTipoIdentificacion" HeaderText="TipoIdentificacion" />
-                        <asp:TemplateField HeaderText="Nombre completo">
+                        <asp:TemplateField HeaderText="Nombre completo"> 
                             <ItemTemplate>
                                 <asp:Label ID="lblNombreCompleto" runat="server" Text='<%# Eval("NombreCompleto") %>'></asp:Label>
                             </ItemTemplate>
                         </asp:TemplateField>
-                        <asp:ButtonField CommandName="Select" HeaderText="Editar" ShowHeader="True" Text="Editar">
+                   
+                        <asp:ButtonField CommandName="Select" HeaderText="Editar" ShowHeader="True" Text="Editar" ControlStyle-CssClass="btn btn-warning">
                             <ControlStyle Font-Underline="True" />
                         </asp:ButtonField>
-                        <asp:ButtonField CommandName="Select1" HeaderText="Eliminar" ShowHeader="True" Text="Eliminar">
+                        <asp:ButtonField CommandName="Select1" HeaderText="Eliminar" ShowHeader="True" Text="Eliminar" ControlStyle-CssClass="btn btn-danger">
+                            <ControlStyle Font-Underline="True" />
+                        </asp:ButtonField>
+
+                        <asp:ButtonField CommandName="Select2" HeaderText="Asignar puesto" ShowHeader="True" Text="Asignar puesto"  ControlStyle-CssClass="btn btn-success">
+                            <ControlStyle Font-Underline="True" />
+                        </asp:ButtonField>
+                             
+                        <asp:ButtonField CommandName="Select3" HeaderText="Ver puesto" ShowHeader="True" Text="Ver puesto" ControlStyle-CssClass="btn btn-success">
                             <ControlStyle Font-Underline="True" />
                         </asp:ButtonField>
                     </Columns>
@@ -40,6 +49,7 @@
             </div>
         </div>
     </div>
+
 
     <script type="text/javascript">
         var n = 300;

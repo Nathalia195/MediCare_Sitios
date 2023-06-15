@@ -29,7 +29,7 @@ namespace Datos
                     cnx.Open();
 
                     // DECLARAMOS LA CONSULTA
-                    string sqlQuery = "sp_insert_telefooferente";
+                    string sqlQuery = "sp_insert_telefo_oferente"; 
 
                     // LE MANDAMOS LA CONSULTA A LA BASE DE DATOS
                     using (SqlCommand cmd = new SqlCommand(sqlQuery, cnx))
@@ -38,7 +38,7 @@ namespace Datos
                         cmd.CommandType = CommandType.StoredProcedure;
                         cmd.Parameters.AddWithValue("@Identificacion", oferentestelefono.Identificacion);
                         cmd.Parameters.AddWithValue("@Telefono", oferentestelefono.Telefono);
-
+                        cmd.Parameters.Add("@Mensaje", SqlDbType.VarChar, 150).Direction = ParameterDirection.Output;
                         // EJECUTAMOS LA CONSULTA
                         cmd.ExecuteNonQuery();
                         //SE OBTIENE EL RESULTADO DE LA CONSULTA

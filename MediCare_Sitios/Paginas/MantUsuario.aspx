@@ -28,10 +28,10 @@
                                 <asp:BoundField DataField="NombreCompleto" HeaderText="Nombre completo" />
                                 <asp:BoundField DataField="CorreoElectronico" HeaderText="Correo" />
                                 <asp:BoundField DataField="CodigoEstado" HeaderText="Estado" />
-                                <asp:ButtonField CommandName="Select" HeaderText="Editar" ShowHeader="True" Text="Editar">
+                                <asp:ButtonField CommandName="Select" HeaderText="Editar" ShowHeader="True" Text="Editar" ControlStyle-CssClass="btn btn-warning" >
                                     <ControlStyle Font-Underline="True" />
                                 </asp:ButtonField>
-                                <asp:ButtonField CommandName="Select1" HeaderText="Eliminar" ShowHeader="True" Text="Eliminar">
+                                <asp:ButtonField CommandName="Select1" HeaderText="Eliminar" ShowHeader="True" Text="Eliminar" ControlStyle-CssClass="btn btn-danger" >
                                     <ControlStyle Font-Underline="True" />
                                 </asp:ButtonField>
                             </Columns>

@@ -43,6 +43,8 @@
   <ItemGroup>
     <Compile Include="EntidadCorreoOferente.cs" />
     <Compile Include="EntidadEstado.cs" />
+    <Compile Include="EntidadOferentePuesto.cs" />
+    <Compile Include="EntidadOferentePuestoRequisito.cs" />
     <Compile Include="EntidadOferentes.cs" />
     <Compile Include="EntidadReferenteOferente.cs" />
     <Compile Include="EntidadRequisitos.cs" />

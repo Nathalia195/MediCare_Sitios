@@ -220,11 +220,10 @@ namespace Datos
                                  Nombre = Convert.ToString(dataReader["Nombre"]),
                                 Apellidos = Convert.ToString(dataReader["Apellidos"]),
                                 LugarResidencia = Convert.ToString(dataReader["LugarResidencia"]),
-                                FechaNacimiento = DateTime.Parse(Convert.ToString(dataReader["FechaNacimiento"])),
+                                FechaNacimiento = Convert.ToDateTime(dataReader["FechaNacimiento"]),
                                 Curriculum = (byte[])dataReader["Curriculum"]
 
-
-                        };
+                            };
                             oferentes.Add(Oferentes1);
                         }
                     }

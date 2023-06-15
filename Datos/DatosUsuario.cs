@@ -15,7 +15,7 @@ namespace Datos
         {
             cnx = ConfigurationManager.ConnectionStrings["cnx"].ConnectionString;
         }
-
+       
         public string Autentificacion(EntidadUsuario Usuario)
         {
             try

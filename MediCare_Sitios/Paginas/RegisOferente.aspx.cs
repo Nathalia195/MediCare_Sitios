@@ -37,11 +37,7 @@ namespace MediCare_Sitios
 
                     }
                 }
-                else
-                {
-                    //Response.Redirect("login.aspx");
-                    Response.Redirect("RegisOferente.aspx");
-                }
+               
             }
 
 
@@ -71,6 +67,10 @@ namespace MediCare_Sitios
 
         private void TraerOferente(string llave)
         {
+
+            //Session["llave"] = null;
+
+            //Response.Redirect("Oferentes.aspx");
             obj.Identificacion = llave;
 
             List<EntidadOferentes> objs = NegocioOferente.TraerOferente(obj);
@@ -86,12 +86,21 @@ namespace MediCare_Sitios
                 flUpcurriculum.Visible = true;
             }
 
-            // txtNombreOfe.ReadOnly = true;
-            //txtApellidosOfe.ReadOnly = true;
+            txtIdentificacion.ReadOnly = true;
+            txtcodtipoid.ReadOnly = true;
+
+
+        
         }
 
         protected void btnRegisOferente_Click(object sender, EventArgs e)
         {
+
+
+            //Session["llave"] = null;
+
+            //Response.Redirect("Oferentes.aspx");
+
             try
             {
                 if (Session["llave"] == null)
@@ -103,10 +112,9 @@ namespace MediCare_Sitios
                     obj.LugarResidencia = txtRecidencia.Text;
                     obj.FechaNacimiento = DateTime.Parse(txtFechaNaci.Text);
                     obj.Curriculum = flUpcurriculum.FileBytes;
-
-
                     string mensaje = NegocioOferente.InsertarOferente(obj);
                     MostrarMensaje(mensaje);
+
                 }
                 else
                 {
@@ -120,12 +128,21 @@ namespace MediCare_Sitios
 
                     string mensaje = NegocioOferente.EditarOferente(obj);
                     MostrarMensaje(mensaje);
+
+
                 }
+
+
+                Session["llave"] = null;
+
+                Response.Redirect("RegisOferente.aspx");
+
             }
             catch (Exception ex)
             {
                 MostrarMensaje(ex.Message);
             }
+
         }
     }
 }
